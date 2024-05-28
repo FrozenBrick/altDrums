@@ -4,7 +4,6 @@
 
 
 var buttonLength = document.querySelectorAll("button")
-// var audio = new Audio ('/sounds/snare.mp3')
 
 for (let index = 0; index < buttonLength.length ; index++) {
     document.querySelectorAll('button')[index].addEventListener('click', function () {
@@ -15,7 +14,7 @@ for (let index = 0; index < buttonLength.length ; index++) {
 
         }, 300)
         
-        var audio = new Audio ('sounds/'+buttonInner+'.mp3')
+        var audio = new Audio ('/sounds/'+buttonInner+'.mp3')
         console.log(audio)
         audio.play()
 
