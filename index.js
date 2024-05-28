@@ -25,7 +25,7 @@ for (let index = 0; index < buttonLength.length ; index++) {
 
 document.addEventListener('keydown', function (event) {
 var keyInner = (event.key)  
-      var audio = new Audio ('sounds/'+keyInner+'.mp3')
+      var audio = new Audio ('./sounds/'+keyInner+'.mp3')
       document.querySelector("."+keyInner).classList.add('pressed')
         setTimeout(function(){
             document.querySelector("."+keyInner).classList.remove('pressed')
