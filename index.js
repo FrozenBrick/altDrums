@@ -12,7 +12,7 @@ for (let index = 0; index < buttonLength.length ; index++) {
         setTimeout(function(){
             document.querySelector("."+buttonInner).classList.remove('pressed')
 
-        }, 300)
+        }, 100)
         
         var audio = new Audio ('./sounds/'+buttonInner+'.mp3')
         console.log(audio)
@@ -30,7 +30,7 @@ var keyInner = (event.key)
         setTimeout(function(){
             document.querySelector("."+keyInner).classList.remove('pressed')
 
-        }, 300)
+        }, 100)
         console.log(audio1)
         audio1.play()
 
